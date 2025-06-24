@@ -759,4 +759,234 @@ body {
   color: #555;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 0.9375rem;
+  }
+  .grid {
+    row-gap: 4.625rem;
+  }
+  .step-number {
+    font-size: 4.625rem;
+  }
+  .testimonials-container {
+    padding: 2rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .list-item {
+    line-height: 1.6;
+  }
+  .header {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 62em) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .btn-mobile-nav {
+    display: block;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+  .nav-open .icon-mobile-nav[name=menu-outline] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name=close-outline] {
+    display: block;
+  }
+  .main-nav-link:link, .main-nav-link:visited {
+    font-size: 1.875rem;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .main-nav-list {
+    gap: 2rem;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featured-logos img {
+    height: 1.5rem;
+  }
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meals {
+    width: 80%;
+  }
+  .meals:first-child {
+    justify-self: end;
+  }
+  .diets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .pricing-plan {
+    width: 90%;
+  }
+  .section-omnifood-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cta {
+    grid-template-columns: 60fr 40fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1rem;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 46.3125em) {
+  .featured-logos {
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .featured-logos .first-row {
+    grid-column: span 2;
+  }
+  .featured-logos .second-row {
+    grid-column: span 3;
+  }
+  .featured-logos img {
+    justify-self: center;
+    height: 1.5rem;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 4;
+  }
+  .step-img-box {
+    transform: translateY(-10%);
+  }
+  .step-number {
+    text-align: center;
+  }
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+  .diets {
+    grid-column: span 1;
+  }
+  .meals,
+  .meals:first-child {
+    justify-self: center;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pricing-plan,
+  .pricing-plan--starter {
+    justify-self: center;
+  }
+  .section-omnifood-features {
+    grid-template-columns: 1fr;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30fr 70fr;
+  }
+  .cta-img-box {
+    grid-row: 1;
+  }
+}
+@media (max-width: 30em) {
+  html {
+    font-size: 0.8125rem;
+  }
+  .featured-logos img {
+    height: 1.125rem;
+  }
+  .margin-right-sm {
+    margin: 0;
+  }
+  .btn--full {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 20em) {
+  body > *:not(.warning-container) {
+    display: none;
+  }
+  .warning-container {
+    display: block;
+    position: absolute;
+    width: 60%;
+    padding: 1.25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    text-align: center;
+    color: #333;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
