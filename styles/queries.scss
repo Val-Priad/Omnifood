@@ -1,0 +1,294 @@
+@use "functions";
+
+// Task is to create layout by yourself
+// and compare to layout created by teacher
+
+@media (max-width: functions.px_to_em(1200)) {
+  html {
+    font-size: functions.px_to_rem(15);
+  }
+
+  .grid {
+    row-gap: functions.px_to_rem(74);
+  }
+  .step-number {
+    font-size: functions.px_to_rem(74);
+  }
+
+  .testimonials-container {
+    padding: functions.px_to_rem(32);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-item {
+    line-height: 1.6;
+  }
+
+  .header {
+    padding: 0 functions.rem(3.2);
+  }
+}
+@media (max-width: functions.px_to_em(992)) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .nav-open {
+    .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translate(0);
+    }
+
+    .icon-mobile-nav[name="menu-outline"] {
+      display: none;
+    }
+    .icon-mobile-nav[name="close-outline"] {
+      display: block;
+    }
+  }
+
+  .main-nav-link {
+    &:link,
+    &:visited {
+      font-size: functions.rem(3);
+    }
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .main-nav-list {
+    gap: functions.rem(3.2);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    margin-top: functions.px_to_rem(32);
+    justify-content: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .featured-logos img {
+    height: functions.rem(2.4);
+  }
+
+  .meals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .meals {
+    width: 80%;
+  }
+
+  .meals:first-child {
+    justify-self: end;
+  }
+  .diets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan {
+    width: 90%;
+  }
+
+  //   .pricing-plan--complete::before {
+  //     top: 5%;
+  //     right: -23%;
+  //   }
+
+  .section-omnifood-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 60fr 40fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: functions.rem(1.6);
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+}
+@media (max-width: functions.px_to_em(741)) {
+  .featured-logos {
+    display: grid;
+    row-gap: functions.px_to_rem(24);
+    grid-template-columns: repeat(6, 1fr);
+
+    .first-row {
+      grid-column: span 2;
+    }
+
+    .second-row {
+      grid-column: span 3;
+    }
+    img {
+      justify-self: center;
+      height: functions.rem(2.4);
+    }
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 4;
+  }
+
+  .step-img-box {
+    transform: translateY(-10%);
+  }
+
+  .step-number {
+    text-align: center;
+  }
+
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diets {
+    grid-column: span 1;
+  }
+
+  .meals,
+  .meals:first-child {
+    justify-self: center;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan,
+  .pricing-plan--starter {
+    justify-self: center;
+  }
+
+  .section-omnifood-features {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30fr 70fr;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+  }
+}
+@media (max-width: functions.px_to_em(480)) {
+  html {
+    font-size: functions.px_to_rem(13);
+  }
+  .featured-logos img {
+    height: functions.rem(1.8);
+  }
+
+  .margin-right-sm {
+    margin: 0;
+  }
+
+  .btn--full {
+    margin-bottom: functions.px_to_rem(20);
+  }
+
+}
+
+@media (max-width: functions.px_to_em(320)) {
+  body >*:not(.warning-container) {
+    display: none;
+  }
+  .warning-container {
+    display: block;
+    position: absolute;
+    width: 60%;
+    padding: functions.px_to_rem(20);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: functions.px_to_rem(12);
+    text-align: center;
+    color: #333;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+  }
+}

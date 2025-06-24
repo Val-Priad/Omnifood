@@ -1,0 +1,31 @@
+// ****************
+// SASS FUNCTIONS
+// ****************
+@use "sass:math";
+
+// function that converts rems that are used by teacher
+// teacher uses 62.5% trick, so I want to achieve the
+// same size as teacher has
+@function rem($old_rem) {
+  @if math.is-unitless($old_rem) {
+    @return ($old_rem * 0.625) + rem;
+  } @else {
+    @error 'Don\'t use units when using the rem() function; only numbers.';
+  }
+}
+
+@function px_to_rem($px) {
+  @if math.is-unitless($px) {
+    @return math.div($px, 16) + rem;
+  } @else {
+    @error 'Don\'t use units when using the px_to_rem() function; only numbers.';
+  }
+}
+
+@function px_to_em($px) {
+  @if math.is-unitless($px) {
+    @return (math.div($px, 16)) + em;
+  } @else {
+    @error 'Don\'t use units when using the px_to_em() function; only numbers.';
+  }
+}
