@@ -38,6 +38,23 @@
   color: #333;
 }
 
+.sticky-navigation .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: functions.rem(8);
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 functions.rem(1.2) functions.rem(3.2) rgba(0, 0, 0, 0.08);
+}
+
+.sticky-navigation .section-hero {
+  margin-top: functions.rem(9.6);
+}
+
 .main-nav-link {
   &:link,
   &:visited {

@@ -19,3 +19,18 @@ allLinks.forEach(function (link) {
         }
     })
 });
+
+// STICKY NAVIGATION IMPLEMENTATION
+const sectionHero = document.querySelector(".section-hero")
+const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+        document.body.classList.remove("sticky-navigation")
+    }
+    else {
+        document.body.classList.add("sticky-navigation")
+    }
+}, {
+    root: null,
+    threshold: 0.1,
+})
+observer.observe(sectionHero)
