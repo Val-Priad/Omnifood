@@ -93,4 +93,4 @@
 Thanks to [Jonas Schmedtmann](https://github.com/jonasschmedtmann)
 for the course.
 
-Link to course: [Learn modern HTML5, CSS3 and web design...](https://ua.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/learn/lecture/27512122#content)
+Link to course: [Learn modern HTML5, CSS3 and web design...](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_DSA_Beta_Prof_la.EN_cc.ROW-English&campaigntype=Search&portfolio=ROW-English&language=EN&product=Course&test=&audience=DSA&topic=&priority=Beta&utm_content=deal4584&utm_term=_._ag_162511579404_._ad_696197165421_._kw__._de_c_._dm__._pl__._ti_dsa-1677053911088_._li_9193772_._pd__._&matchtype=&gad_source=1&gad_campaignid=21168154305&gbraid=0AAAAADROdO2Zj_llVDcud0cTBtRTLNG0h&gclid=Cj0KCQjwgvnCBhCqARIsADBLZoJqCZumJUa4-dCcJQYKcdCFJ0UOz00o8_qYISnzreZp7Ve_QQ0iACsaAn2sEALw_wcB&couponCode=PMNVD3025)
